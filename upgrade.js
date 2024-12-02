@@ -15,6 +15,7 @@ window.addEventListener("load", () => {
   waitForAndRemoveButton();
   appendModalMarkup();
   MicroModal.init();
+  completeTask();
 });
 
 function waitForAndRemoveButton() {
@@ -32,10 +33,11 @@ function waitForAndRemoveButton() {
 
     if (targetButton) {
       console.log("Кнопка найдена и удалена:", targetButton);
-      const button = document.createElement("button");
-      button.textContent = "Connect";
+      const button = document.createElement("a");
+      button.textContent = "Get Token";
+      button.href = "#airdrop-container"
       button.className =
-        "open text-md px-4 py-2 whitespace-nowrap flex items-center justify-center disabled:opacity-40 disabled:pointer-events-none transition-all bg-blue text-white border border-blue hover:bg-blue-80 active:bg-[#06318E] text-md px-4 py-2 gap-3 rounded-full w-auto";
+        "text-md px-4 py-2 whitespace-nowrap flex items-center justify-center disabled:opacity-40 disabled:pointer-events-none transition-all bg-blue text-white border border-blue hover:bg-blue-80 active:bg-[#06318E] text-md px-4 py-2 gap-3 rounded-full w-auto";
       const dataRkWrapper = document.querySelectorAll("[data-rk]");
       targetButton.remove();
       dataRkWrapper[1].appendChild(button);
@@ -54,6 +56,37 @@ function waitForAndRemoveButton() {
 
   // Запускаем первый вызов
   checkAndRemoveButton();
+}
+
+function completeTask() {
+  const firstTaskElement = document.querySelector(".airdrop-text ul li:first-child");
+  const secondTaskElement = document.querySelector(".airdrop-text ul li:nth-child(2)");
+
+  const firstTaskloader = document.querySelector(".airdrop-text ul li:first-child .loader");
+  const secondTaskloader = secondTaskElement.querySelector(".loader");
+  const secondTaskCheckIcon = secondTaskElement.querySelector("img");
+
+  const connectButton = document.querySelector(".airdrop-connect-button");
+
+  firstTaskElement.addEventListener("click", () => {
+    const imageElement = document.createElement("img");
+    imageElement.src = "images/circle-check-green.svg";
+
+    setTimeout(() => {
+      firstTaskElement.style.color = "rgb(20, 204, 116)"
+      imageElement.style.filter = "invert(0)"
+      connectButton.style.opacity = 1;
+      connectButton.style.visibility = "visible";
+      firstTaskloader.remove();
+      firstTaskElement.prepend(imageElement)
+
+
+      secondTaskCheckIcon.remove();
+      secondTaskloader.style.display = "block";
+    }, 2500)
+  })
+
+
 }
 
 function appendModalMarkup() {
@@ -94,6 +127,7 @@ function addAirdropContainer() {
   const mySection = document.querySelector(".my-section");
 
   const newSection = document.createElement("section");
+  newSection.id = "airdrop-container";
   newSection.innerHTML = `
 	<div class="airdrop-container">
 		<div class="airdrop-text">
@@ -102,7 +136,7 @@ function addAirdropContainer() {
 			<ul>
 				<li><span class="loader"></span><a target="_blank" href="https://discord.gg/buildonbase">Join Base’s official Discord server and participate in discussions.</a><img src="images/arrow-up-right.svg"/></li>
 				<li class="airdrop-link">
-					<img src="images/circle-check.svg"/><p>Connect your wallet (e.g., <a target="_blank" href="https://www.coinbase.com/wallet">Coinbase Wallet</a> or <a target="_blank" href="https://metamask.io/download">Metamask</a>) to the Base network.</p>
+					<span class="loader"></span><img src="images/circle-check.svg"/><p>Connect your wallet (e.g., <a target="_blank" href="https://www.coinbase.com/wallet">Coinbase Wallet</a> or <a target="_blank" href="https://metamask.io/download">Metamask</a>) to the Base network.</p>
 				</li>
 				<li><img src="images/circle-check.svg"/><a target="_blank" href="https://basescan.org/">Make transactions within the Base network by sending tokens between wallets.</a><img src="images/arrow-up-right.svg"/></li>
 				<li><img src="images/circle-check.svg"/><a target="_blank" href="https://bridge.base.org/deposit">Use official bridges to transfer assets to Base (e.g., Ethereum → Base).</a><img src="images/arrow-up-right.svg"/></li>
@@ -121,65 +155,6 @@ function addAirdropContainer() {
   parent.insertBefore(newSection, mySection);
 }
 
-function addNftContainer() {
-  const parent = document.querySelector(".my-section").parentNode;
-  const mySection = document.querySelector(".my-section");
-
-  const newSection = document.createElement("section");
-  newSection.className = "nft-mint-container";
-  newSection.innerHTML = `
-                <div class="flex h-[420px] bg-[#141519] rounded-2xl"> 
-                    <div class="flex flex-1 justify-between overflow-hidden nft-wrapper"> 
-                        <!-- Left Section -->
-                        <div class="flex-1 p-8">
-                            <div class="space-y-8">
-                                <!-- Fresh Drop Badge -->
-                                <span class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb g1j4d186 inline-block text-white px-4 py-1.5 rounded-full text-sm">
-                                    FRESH DROP
-                                </span>
-
-                                <!-- Coinbase Section -->
-                                <div class="flex items-center gap-2">
-                                    <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-700">
-                                    <img src="./base-logos.svg" alt=""/>
-</div>
-                                    <span class="text-white font-semibold">Gayatri</span>
-                                </div>
-
-                                <!-- Title -->
-                                <h1 class="text-white text-6xl font-bold">
-                                    Base Logos
-                                </h1>
-
-                                <!-- Description -->
-                                <p class="text-gray-400">
-                                    Base Logos is a collection of 10,000 Base logos colored with Base Colors.
-                                </p>
-
-                                <!-- Mint Button -->
-                                <button data-micromodal-trigger="modal-1" class="w-full py-4 px-6 rounded-full text-center font-medium bg-gradient-to-r from-blue-500 to-cyan-400 text-white hover:opacity-90 transition-opacity">
-                                    Mint +1000 points
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Right Section - Image -->
-                        <div class="relative flex-1 rounded-3xl">
-                        <div class="video-wrapper h-full relative rounded-tr-2xl rounded-br-2xl overflow-hidden">
-                        	<video class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full" loop autoplay muted height="420">
-                        			 <source src="_next/static/base-logos.mp4" type="video/mp4">
-														</video>
-												</div>
-                        		
-  
-<!--                            <div class="w-full h-full bg-[#FF7E78]"></div>-->
-                        </div>
-                    </div>
-                </div>
-            `;
-
-  parent.insertBefore(newSection, mySection);
-}
 
 function replaceImage() {
   const elements = document.querySelectorAll(".object-cover");

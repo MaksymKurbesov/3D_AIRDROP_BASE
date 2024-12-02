@@ -10,6 +10,10 @@
 /*    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;*/
 /*}*/
 
+* {
+    scroll-behavior: smooth;
+}
+
 .modal__overlay {
     position: fixed;
     top: 0;
@@ -164,6 +168,10 @@
     will-change: transform;
 }
 
+#airdrop-container {
+    padding: 50px 0;
+}
+
 .airdrop-container {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
@@ -251,10 +259,16 @@
 
 .airdrop-connect-button {
     margin-top: 25px;
+    opacity: 0;
+    visibility: hidden;
     /*background: gray;*/
     /*cursor: not-allowed;*/
     /*border: none;*/
     /*outline: none;*/
+}
+
+.airdrop-text ul li:nth-child(2) .loader {
+    display: none;
 }
 
 .airdrop-connect-button img {

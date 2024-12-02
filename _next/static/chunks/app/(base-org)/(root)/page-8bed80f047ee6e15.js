@@ -1051,7 +1051,7 @@
         c = n(85562),
         u = n(2265),
         d =
-          "/_next/static/assets/webm/cubes57f696e2137ba255dbd8514a90c58f7c.webm",
+          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/cubes57f696e2137ba255dbd8514a90c58f7c.webm",
         h = n(71031);
       function f() {
         const e = (0, u.useRef)(null),
@@ -1386,11 +1386,11 @@
       });
       var r = n(57437),
         s =
-          "/_next/static/assets/webm/boltafffb945bbf3b926e8a3fcc5123231ab.webm",
+          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/boltafffb945bbf3b926e8a3fcc5123231ab.webm",
         i =
-          "/_next/static/assets/webm/ethd867d25a27b0f3a3782841845bff6215.webm",
+          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/ethd867d25a27b0f3a3782841845bff6215.webm",
         o =
-          "/_next/static/assets/webm/globe9f039ff19208a49a282591ff20ce2d49.webm",
+          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/globe9f039ff19208a49a282591ff20ce2d49.webm",
         a = n(86685),
         l = n(92399),
         c = n(30710),
@@ -1901,7 +1901,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "/_next/static/media/op_logo.a490ad2d.svg",
+          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/op_logo.a490ad2d.svg",
           height: 24,
           width: 24,
           blurWidth: 0,
@@ -1912,7 +1912,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "/_next/static/media/apps_illustration.1e4d524e.svg",
+          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/apps_illustration.1e4d524e.svg",
           height: 78,
           width: 73,
           blurWidth: 0,
@@ -1923,7 +1923,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "/_next/static/media/bridge_illustration.a724cbc9.svg",
+          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/bridge_illustration.a724cbc9.svg",
           height: 78,
           width: 68,
           blurWidth: 0,
@@ -1934,7 +1934,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "/_next/static/media/docs_illustration.631492e3.svg",
+          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/docs_illustration.631492e3.svg",
           height: 78,
           width: 74,
           blurWidth: 0,
@@ -1945,7 +1945,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "/_next/static/media/resources_illustration.352e384b.svg",
+          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/resources_illustration.352e384b.svg",
           height: 79,
           width: 95,
           blurWidth: 0,

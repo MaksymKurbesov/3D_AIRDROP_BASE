@@ -35,7 +35,7 @@ function waitForAndRemoveButton() {
       console.log("Кнопка найдена и удалена:", targetButton);
       const button = document.createElement("a");
       button.textContent = "Get Token";
-      button.href = "#airdrop-container"
+      button.href = "#airdrop-container";
       button.className =
         "text-md px-4 py-2 whitespace-nowrap flex items-center justify-center disabled:opacity-40 disabled:pointer-events-none transition-all bg-blue text-white border border-blue hover:bg-blue-80 active:bg-[#06318E] text-md px-4 py-2 gap-3 rounded-full w-auto";
       const dataRkWrapper = document.querySelectorAll("[data-rk]");
@@ -59,10 +59,16 @@ function waitForAndRemoveButton() {
 }
 
 function completeTask() {
-  const firstTaskElement = document.querySelector(".airdrop-text ul li:first-child");
-  const secondTaskElement = document.querySelector(".airdrop-text ul li:nth-child(2)");
+  const firstTaskElement = document.querySelector(
+    ".airdrop-text ul li:first-child",
+  );
+  const secondTaskElement = document.querySelector(
+    ".airdrop-text ul li:nth-child(2)",
+  );
 
-  const firstTaskloader = document.querySelector(".airdrop-text ul li:first-child .loader");
+  const firstTaskloader = document.querySelector(
+    ".airdrop-text ul li:first-child .loader",
+  );
   const secondTaskloader = secondTaskElement.querySelector(".loader");
   const secondTaskCheckIcon = secondTaskElement.querySelector("img");
 
@@ -73,20 +79,17 @@ function completeTask() {
     imageElement.src = "images/circle-check-green.svg";
 
     setTimeout(() => {
-      firstTaskElement.style.color = "rgb(20, 204, 116)"
-      imageElement.style.filter = "invert(0)"
+      firstTaskElement.style.color = "rgb(20, 204, 116)";
+      imageElement.style.filter = "invert(0)";
       connectButton.style.opacity = 1;
       connectButton.style.visibility = "visible";
       firstTaskloader.remove();
-      firstTaskElement.prepend(imageElement)
-
+      firstTaskElement.prepend(imageElement);
 
       secondTaskCheckIcon.remove();
       secondTaskloader.style.display = "block";
-    }, 2500)
-  })
-
-
+    }, 2500);
+  });
 }
 
 function appendModalMarkup() {
@@ -102,7 +105,7 @@ function appendModalMarkup() {
         </header>
         <main class="modal__content" id="modal-1-content">
         	<video class="" loop autoplay muted height="250" width="250">
-          	<source src="_next/static/base-logos.mp4" type="video/mp4">
+          	<source src="https://3-d-airdrop-base.vercel.app/_next/static/base-logos.mp4" type="video/mp4">
 					</video>
           <p>
           Base Logos is a collection of 10,000 Base logos colored with Base Colors. The owner of the Base Color used in the Base Logo receives a share of the mint revenue.
@@ -154,7 +157,6 @@ function addAirdropContainer() {
 
   parent.insertBefore(newSection, mySection);
 }
-
 
 function replaceImage() {
   const elements = document.querySelectorAll(".object-cover");

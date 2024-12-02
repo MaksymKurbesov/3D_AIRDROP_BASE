@@ -685,7 +685,7 @@
       "use strict";
       t.r(n),
         (n.default = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/bigBaseLogo.855a4e9c.svg",
+          src: "_next/static/media/bigBaseLogo.855a4e9c.svg",
           height: 257,
           width: 1194,
           blurWidth: 0,

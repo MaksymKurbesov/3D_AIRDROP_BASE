@@ -2285,10 +2285,7 @@
                   {
                     precedence: "dynamic",
                     rel: "stylesheet",
-                    href:
-                      r.assetPrefix +
-                      "https://3-d-airdrop-base.vercel.app/_next/" +
-                      encodeURI(e),
+                    href: r.assetPrefix + "_next/" + encodeURI(e),
                     as: "style",
                   },
                   e,

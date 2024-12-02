@@ -574,7 +574,7 @@
         o = s(70304),
         l = s(87739),
         c = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/logo.f6fdedfc.svg",
+          src: "_next/static/media/logo.f6fdedfc.svg",
           height: 46,
           width: 46,
           blurWidth: 0,

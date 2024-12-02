@@ -54,27 +54,22 @@
         u = t(88810),
         g = t(72694),
         m =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/controllere47ca45a29355805bd39158b6793da76.glb",
-        j =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/eth09b2cc4122b47ec4453ba315d76d227f.glb",
-        b =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/globec086c8afef1eb09492e81e0b51134e4b.glb",
-        f =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/phone16ae0c91a2963439127af7206ce34aa1.glb",
+          "_next/static/assets/glb/controllere47ca45a29355805bd39158b6793da76.glb",
+        j = "_next/static/assets/glb/eth09b2cc4122b47ec4453ba315d76d227f.glb",
+        b = "_next/static/assets/glb/globec086c8afef1eb09492e81e0b51134e4b.glb",
+        f = "_next/static/assets/glb/phone16ae0c91a2963439127af7206ce34aa1.glb",
         p =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/headphones0a5e502ed7913aaa2215cd815f7c4a70.glb",
+          "_next/static/assets/glb/headphones0a5e502ed7913aaa2215cd815f7c4a70.glb",
         y =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/spikeyb3355dadee223fc1396e032dbc916fae.glb",
-        w =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/play872356c815b73013937e41ae8d76d56b.glb",
+          "_next/static/assets/glb/spikeyb3355dadee223fc1396e032dbc916fae.glb",
+        w = "_next/static/assets/glb/play872356c815b73013937e41ae8d76d56b.glb",
         E =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/object239aa7282621249ac1f94feee0173ed2.glb",
-        v =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/logob836918bcd7862e8424fdc8b99ab4370.glb",
+          "_next/static/assets/glb/object239aa7282621249ac1f94feee0173ed2.glb",
+        v = "_next/static/assets/glb/logob836918bcd7862e8424fdc8b99ab4370.glb",
         S =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/glb/cursor9c4e425930733dfc3a8ea7c8b9f1b802.glb",
+          "_next/static/assets/glb/cursor9c4e425930733dfc3a8ea7c8b9f1b802.glb",
         B = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/lightning.639b2e46.svg",
+          src: "_next/static/media/lightning.639b2e46.svg",
           height: 93,
           width: 54,
           blurWidth: 0,
@@ -465,14 +460,14 @@
         });
       }
       var xe = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/base-logo.3985e963.svg",
+          src: "_next/static/media/base-logo.3985e963.svg",
           height: 30,
           width: 29,
           blurWidth: 0,
           blurHeight: 0,
         },
         ue = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/environmentLight.bba96e23.jpg",
+          src: "_next/static/media/environmentLight.bba96e23.jpg",
           height: 480,
           width: 960,
           blurDataURL:

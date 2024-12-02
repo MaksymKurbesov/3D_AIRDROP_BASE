@@ -376,7 +376,7 @@
       });
       var a = t(57437),
         r = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/usernameBaseLogo.c13052c9.svg",
+          src: "_next/static/media/usernameBaseLogo.c13052c9.svg",
           height: 46,
           width: 44,
           blurWidth: 0,

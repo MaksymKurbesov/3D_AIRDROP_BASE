@@ -1051,7 +1051,7 @@
         c = n(85562),
         u = n(2265),
         d =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/cubes57f696e2137ba255dbd8514a90c58f7c.webm",
+          "_next/static/assets/webm/cubes57f696e2137ba255dbd8514a90c58f7c.webm",
         h = n(71031);
       function f() {
         const e = (0, u.useRef)(null),
@@ -1386,11 +1386,10 @@
       });
       var r = n(57437),
         s =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/boltafffb945bbf3b926e8a3fcc5123231ab.webm",
-        i =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/ethd867d25a27b0f3a3782841845bff6215.webm",
+          "_next/static/assets/webm/boltafffb945bbf3b926e8a3fcc5123231ab.webm",
+        i = "_next/static/assets/webm/ethd867d25a27b0f3a3782841845bff6215.webm",
         o =
-          "https://3-d-airdrop-base.vercel.app/_next/static/assets/webm/globe9f039ff19208a49a282591ff20ce2d49.webm",
+          "_next/static/assets/webm/globe9f039ff19208a49a282591ff20ce2d49.webm",
         a = n(86685),
         l = n(92399),
         c = n(30710),

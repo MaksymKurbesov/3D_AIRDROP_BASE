@@ -432,7 +432,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/build-with-us.449ee1ca.png",
+          src: "_next/static/media/build-with-us.449ee1ca.png",
           height: 379,
           width: 1250,
           blurDataURL:
@@ -445,7 +445,7 @@
       "use strict";
       n.r(t),
         (t.default = {
-          src: "https://3-d-airdrop-base.vercel.app/_next/static/media/getstarted-hero-img.11e244a0.png",
+          src: "_next/static/media/getstarted-hero-img.11e244a0.png",
           height: 2366,
           width: 3160,
           blurDataURL:

@@ -105,7 +105,7 @@ function appendModalMarkup() {
         </header>
         <main class="modal__content" id="modal-1-content">
         	<video class="" loop autoplay muted height="250" width="250">
-          	<source src="https://3-d-airdrop-base.vercel.app/_next/static/base-logos.mp4" type="video/mp4">
+          	<source src="_next/static/base-logos.mp4" type="video/mp4">
 					</video>
           <p>
           Base Logos is a collection of 10,000 Base logos colored with Base Colors. The owner of the Base Color used in the Base Logo receives a share of the mint revenue.
